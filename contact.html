@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Through Chi Chi</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<style>
+  /* Sidebar */
+  .sidebar {
+  width: 200px;
+  font-family: sans-serif;
+  background-color: transparent;
+  height: 100vh;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1em;
+}
+
+.sidebar a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: rgb(124, 124, 124)
+}
+    /* Footer Bar */
+    .footer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      text-align: center;
+      padding: 1em 0;
+      z-index: 100;
+    }
+
+    .footer-text {
+      color: white;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 1em;
+      margin: 0;
+    }
+
+</style>
+<body>
+  <div class="page-links">
+    <a href="gallery.html">Gallery</a>
+    <a href="artists.html">Artists</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+
+  <div class="main-content">
+    <header>
+      <h1>Contact</h1>
+    </header>
+
+    <section class="contact-section">
+      <div class="contact-box">
+        <h2>Reach Out <3</h2>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p id="formMessage" class="form-message"></p>
+      </div>
+    </section>
+    <footer class="footer-bar">
+      <p class="footer-text">© 2025 CHI CHI</p>
+    </footer>
+  </div>
+  <audio controls autoplay loop>
+    <source src="Queen Latifah - U.N.I.T.Y. (Lyric Video).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+<script>
+  document.addEventListener("mousemove", (e) => {
+    const star = document.createElement("div");
+    star.className = "star-trail";
+    star.innerText = "★";
+
+    // Position it at the mouse location
+    star.style.left = `${e.pageX}px`;
+    star.style.top = `${e.pageY}px`;
+
+    document.body.appendChild(star);
+
+    // Remove after fade
+    setTimeout(() => {
+      star.remove();
+    }, 800);
+  });
+</script> 
+
+<script>
+  function createFallingStar() {
+    const star = document.createElement('div');
+    star.classList.add('falling-star');
+    star.textContent = '★'; // Unicode star
+    star.style.left = Math.random() * window.innerWidth + 'px';
+    star.style.fontSize = (Math.random() * 20 + 10) + 'px';
+
+    document.body.appendChild(star);
+
+    star.addEventListener('animationend', () => {
+      star.remove();
+    });
+  }
+
+  // Create a falling star every 500ms
+  setInterval(createFallingStar, 500);
+</script>
+
+</html>
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspiring Artists - Through Chi Chi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+
+.image-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;  /* center each grid item */
+  gap: 2em;
+  margin: 2em auto;
+  max-width: 1200px;
+  padding: 1em;
+}
+
+p {
+  text-align: center;
+}
+    /* Footer Bar */
+    .footer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      text-align: center;
+      padding: 1em 0;
+      z-index: 100;
+    }
+
+    .footer-text {
+      color: white;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 1em;
+      margin: 0;
+    }
+
+
+
+
+</style>
+<body>
+  <div class="page-links">
+    <a href="gallery.html">Gallery</a>
+    <a href="artists.html">Artists</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+  <div class="main-content">
+    <header>
+      <h1>Inspiring Artistz</h1> <p>
+          <p> The artists featured here have shaped my vision and sound, inspiring me through their style, energy, and authenticity. I draw inspiration from their creativity, passion, and the way they connect deeply with their audiences.</p></p>
+      
+    </header>
+
+    
+
+  <div class="gallery-container" id="gallery">
+    <div class="image-stack">
+      <img src="Untitled-1-6.jpg" alt="photo1" />
+      <img src="thehymancollection-juno-calypso-sensory-deprivation-2016.webp" alt="photo2" />
+      <img src="Untitled-2-2016.jpg" alt="photo3" />
+      <img src="photo-1725023813699-139ab1260cef.jpeg" alt="photo4" />
+      <img src="c2bd6e0095c0238611ee9a8b75dfb5b1.jpg" alt="photo5" />
+      <img src="36e56c5cd9c4935f7425703f6161d47c.jpg" alt="photo1" />
+      <img src="ccfe0f9502c420b96af16d9a0a65fade.jpg" alt="photo2" />
+      <img src="c5ff4fe2e31ba7c66b0f4307a0eb1ce9.jpg" alt="photo3" />
+      <img src="Screenshot 2025-05-14 at 12.33.25 PM.png" alt="photo4" />
+      <img src="Screenshot 2025-05-14 at 12.34.44 PM.png" alt="photo5" />
+      <img src="Screenshot 2025-05-14 at 12.34.31 PM.png" alt="photo1" />
+      <img src="Screenshot 2025-05-14 at 12.37.32 PM.png" alt="photo2" />
+      <img src="Screenshot 2025-05-14 at 12.36.48 PM.png" alt="photo3" />
+      <img src="de7d18e282d534a8239c32b585cf4a69.jpg" alt="photo4" />
+      <img src="45367920df58aa8230c964c689c56656.jpg" alt="photo5" />
+        </div>
+
+        <footer class="footer-bar">
+          <p class="footer-text">© 2025 CHI CHI</p>
+        </footer>
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="Queen Latifah - U.N.I.T.Y. (Lyric Video).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+<script>
+  document.addEventListener("mousemove", (e) => {
+    const star = document.createElement("div");
+    star.className = "star-trail";
+    star.innerText = "★";
+
+    // Position it at the mouse location
+    star.style.left = `${e.pageX}px`;
+    star.style.top = `${e.pageY}px`;
+
+    document.body.appendChild(star);
+
+    // Remove after fade
+    setTimeout(() => {
+      star.remove();
+    }, 800);
+  });
+</script> 
+<script>
+  function createFallingStar() {
+    const star = document.createElement('div');
+    star.classList.add('falling-star');
+    star.textContent = '★'; // Unicode star
+    star.style.left = Math.random() * window.innerWidth + 'px';
+    star.style.fontSize = (Math.random() * 20 + 10) + 'px';
+
+    document.body.appendChild(star);
+
+    star.addEventListener('animationend', () => {
+      star.remove();
+    });
+  }
+
+  // Create a falling star every 500ms
+  setInterval(createFallingStar, 500);
+</script>
+
+</html>

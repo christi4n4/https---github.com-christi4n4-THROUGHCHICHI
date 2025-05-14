@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Through Chi Chi ੈ✩‧₊˚</title>
+  <link rel="stylesheet" href="style.css" />
+
+ 
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Custom Font */
+    @font-face {
+      font-family: 'Andalucia';
+      src: url('andalucia.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .image-stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;  /* center each grid item */
+  gap: 2em;
+  padding: 1em;
+  margin: 2em auto;
+  max-width: 1200px;
+  padding: 1em;
+}
+
+
+    /* Headings */
+    h1 {
+      font-family: 'Andalucia', cursive, serif;
+      font-size: 3em;
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    h2 {
+      font-family: 'Andalucia', cursive, serif;
+    }
+
+    /* Base Styles */
+    body {
+      font-family: 'Andalucia', cursive, serif;
+      line-height: 1.6;
+      color: #ffffff;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Sections */
+    section {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Gallery Grid */
+    .gallery-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 2em;
+      gap: 2em;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Gallery Images */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1em;
+      margin-top: 1em;
+      max-width: 1200px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #ffffff;
+      margin-top: 2em;
+    }
+
+    /* Main Content */
+    .main-content {
+      width: 100%;
+      max-width: 1200px;
+      padding: 2em;
+      text-align: center;
+    }
+
+    /* Inverted Background Toggle */
+    .invert-bg {
+      filter: invert(1) brightness(1.2) contrast(1.1);
+    }
+
+    /* Footer Bar */
+    .footer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      text-align: center;
+      padding: 1em 0;
+      z-index: 100;
+    }
+
+    .footer-text {
+      color: white;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 1em;
+      margin: 0;
+    }
+
+    header h1 {
+      font-family: 'Andalucia', cursive;
+      font-size: 4em;
+      text-align: center;
+      margin-bottom: 1em;
+      color: rgb(255, 255, 255);
+    }
+
+    /* Center the paragraph text */
+    main p {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 9em;
+      text-align: center;
+      margin-top: 1em;
+      color: rgb(0, 0, 0);
+      padding: 3EM;
+    }
+    </style>
+        <div class="page-links">
+          <a href="gallery.html">Gallery</a>
+          <a href="artists.html">Artists</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        
+
+</head>
+<body>
+  <div class="main-content">
+    <header>
+      <h1>Through Chi Chi ੈ✩‧₊˚</h1>
+      <p>Through Chi Chi is a bold creative expression blending street style, soul, and raw emotion. The project tells stories through powerful visuals and authentic energy that leaves a lasting impression.</p>
+    </header>
+    
+
+    <div class="gallery-container" id="gallery">
+      <div class="image-stack">
+        <img src="exposure.jpeg" alt="photo1" />
+        <img src="gianT.jpeg" alt="photo2" />
+        <img src="pop art exposure.jpeg" alt="photo3" />
+        <img src="IMG_9701.JPG" alt="photo4" />
+        <img src="IMG_9840.JPG" alt="photo5" />
+        <img src="_MG_0937.JPG" alt="photo1" />
+        <img src="_MG_0838.JPG" alt="photo2" />
+        <img src="_MG_0932.JPG" alt="photo3" />
+        <img src="_MG_0883.JPG" alt="photo4" />
+        <img src="_MG_0825.JPG" alt="photo5" />
+        <img src="IMG_0049.JPG" alt="photo1" />
+        <img src="_MG_0011.jpeg" alt="photo2" />
+        <img src="IMG_9557.JPG" alt="photo3" />
+        <img src="IMG_9364.JPG" alt="photo4" />
+        <img src="SHOT 5.jpeg" alt="photo5" />
+          </div>
+        </div>
+      </main>
+<footer class="footer-bar">
+      <p class="footer-text">© 2025 CHI CHI</p>
+    </footer>
+  </div>
+  <audio controls autoplay loop>
+    <source src="Queen Latifah - U.N.I.T.Y. (Lyric Video).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    document.addEventListener("mousemove", (e) => {
+      const star = document.createElement("div");
+      star.className = "star-trail";
+      star.innerText = "★";
+      star.style.left = `${e.pageX}px`;
+      star.style.top = `${e.pageY}px`;
+      document.body.appendChild(star);
+      setTimeout(() => {
+        star.remove();
+      }, 800);
+    });
+  </script>
+  <script>
+    function createFallingStar() {
+      const star = document.createElement('div');
+      star.classList.add('falling-star');
+      star.textContent = '★'; // Unicode star
+      star.style.left = Math.random() * window.innerWidth + 'px';
+      star.style.fontSize = (Math.random() * 20 + 10) + 'px';
+  
+      document.body.appendChild(star);
+  
+      star.addEventListener('animationend', () => {
+        star.remove();
+      });
+    }
+  
+    // Create a falling star every 500ms
+    setInterval(createFallingStar, 500);
+  </script>
+  
+</body>
+</html>
